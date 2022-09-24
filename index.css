@@ -1,181 +1,182 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-
+@font-face {
+  font-family: "Mouse Memoirs";
+  src: url("/fonts/MouseMemoirs-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
-html,body{
-    height:100%;
-    width:100%;
-    transition: background-Color cubic-bezier(0.215, 0.610, 0.355, 1) 1s;
-}
-#main{
-    padding: 20px 75px;
-    width:100vw;
-    position: relative;
-}
-body::-webkit-scrollbar{
-    display: none;
-}
-#nav{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    width:100%;
-    height:140px;
-    font-family: Mouse Memoirs;
-    
-}
-#nav h4{
-    margin-left: -40px;
-     font-size: 3vw;
-   line-height: 1em;
-   opacity: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#icons h6{
-font-weight: 100;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  transition: background-Color cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
 }
-#icons i{
-    border: 1px solid white;
-    border-radius: 50%;
-    padding: 10px;
-    background-color: white;
-    position: absolute;
-    right:0;
+#main {
+  padding: 20px 75px;
+  width: 100vw;
+  position: relative;
 }
-
-.text{
-   display: flex;
-   justify-content: space-between;
-    
+body::-webkit-scrollbar {
+  display: none;
 }
-.tleft{
-    font-size: 7vw;
-    line-height: 1.7em;
-    font-family: Vanguard CF;
-    opacity:0;
+#nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 140px;
+  font-family: Mouse Memoirs;
 }
-.tright{
-    font-family: Cascadia Mono;
-    margin-top: auto;
-    opacity:0;
-}
-
-.an{
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    background-color: black;
-    z-index: 9;
-}
-.i1{
-    position: absolute;
-    padding: inherit;
-    right:0;
-    top:90vh;
+#nav h4 {
+  margin-left: -40px;
+  font-size: 3vw;
+  line-height: 1em;
+  opacity: 0;
 }
 
-img{
-     width:50vw;
-    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s;
-   
+#icons h6 {
+  font-weight: 100;
 }
- .h4{
-    font-family: Gilroy;
-    font-size: 2.2vw;
-}
- .h6{
-    font-family: Cascadia Mono;
-    font-weight: 500;
+#icons i {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  right: 0;
 }
 
-.i2{
-   position: absolute;
-    padding: inherit;
-    left:0;
-    top:182vh;
+.text {
+  display: flex;
+  justify-content: space-between;
 }
-.i3{
-    position: absolute;
-     padding: inherit;
-    right:0;
-     top:285vh;
- }
- .i4{
-    position: absolute;
-     padding: inherit;
-    left:0;
-     top:390vh;
- }
- .i5{
-    position: absolute;
-     padding: inherit;
-    right:0;
-     top:490vh;
- }
-
-
- #bottom{
-     position: absolute;
-     top:580vh;    
-    
+.tleft {
+  font-size: 7vw;
+  line-height: 1.7em;
+  font-family: Vanguard CF;
+  opacity: 0;
 }
-#bottom h1{
-    font-family: Vanguard CF;
-    font-size: 6vw;
-}
-.circle{
-    height:9em;
-    width:9em;
-    border-radius: 50%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family:Cascadia Mono;
-    font-size: 1.1vw;
-    margin-top: 32px;
+.tright {
+  font-family: Cascadia Mono;
+  margin-top: auto;
+  opacity: 0;
 }
 
-.circle i{
-    font-size: 1.5vw;
+.an {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: black;
+  z-index: 9;
+}
+.i1 {
+  position: absolute;
+  padding: inherit;
+  right: 0;
+  top: 90vh;
 }
 
-#btmnav{
-    position: absolute;
-    top:79vh;
-    display: flex;
-    justify-content: space-between;
-    width:90vw;
+img {
+  width: 50vw;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s;
+}
+.h4 {
+  font-family: Gilroy;
+  font-size: 2.2vw;
+}
+.h6 {
+  font-family: Cascadia Mono;
+  font-weight: 500;
 }
 
-#btmnav h4{
-    font-family: Gilroy;
-    font-size: 1.5vw;
-    margin-bottom: 1.5vw;
+.i2 {
+  position: absolute;
+  padding: inherit;
+  left: 0;
+  top: 182vh;
 }
-#btmnav h6{
-    font-family: Cascadia Mono;
-    font-size: 0.8vw;
+.i3 {
+  position: absolute;
+  padding: inherit;
+  right: 0;
+  top: 285vh;
 }
-.fo{
-   height:22px;
-   width:22px;
-   background-color: white;
-   border-radius: 50%;
-   border:4px solid black;
-   position: absolute;
-   z-index: 9;
-   opacity: 0;
-   mix-blend-mode: difference;
-   transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.4s;
+.i4 {
+  position: absolute;
+  padding: inherit;
+  left: 0;
+  top: 390vh;
 }
-
-.cover{
-    position: relative;
-    overflow: hidden;
+.i5 {
+  position: absolute;
+  padding: inherit;
+  right: 0;
+  top: 490vh;
 }
 
+#bottom {
+  position: absolute;
+  top: 580vh;
+}
+#bottom h1 {
+  font-family: Vanguard CF;
+  font-size: 6vw;
+}
+.circle {
+  height: 9em;
+  width: 9em;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Cascadia Mono;
+  font-size: 1.1vw;
+  margin-top: 32px;
+}
+
+.circle i {
+  font-size: 1.5vw;
+}
+
+#btmnav {
+  position: absolute;
+  top: 79vh;
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+#btmnav h4 {
+  font-family: Gilroy;
+  font-size: 1.5vw;
+  margin-bottom: 1.5vw;
+}
+#btmnav h6 {
+  font-family: Cascadia Mono;
+  font-size: 0.8vw;
+}
+.fo {
+  height: 22px;
+  width: 22px;
+  background-color: white;
+  border-radius: 50%;
+  border: 4px solid black;
+  position: absolute;
+  z-index: 9;
+  opacity: 0;
+  mix-blend-mode: difference;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+}
+
+.cover {
+  position: relative;
+  overflow: hidden;
+}
