@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Mouse Memoirs";
-  src: url("/fonts/MouseMemoirs-Regular.ttf") format("ttf");
+  src: url("C:\Users\pawan\AppData\Local\Microsoft\Windows\Fonts\Mouse Memoirs Regular")
+    format("ttf");
   font-weight: normal;
   font-style: normal;
 }
